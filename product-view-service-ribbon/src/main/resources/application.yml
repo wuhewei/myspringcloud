@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: product-view-service-ribbon
+  thymeleaf:
+    cache: false
+    servlet:
+      content-type: text/html
+      mode: HTML5

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: product-service-zuul
+zuul:
+  routes:
+    api-a:
+        path: /api-data/**
+        service-id: product-data-service
+    api-b:
+        path: /api-view/**
+        service-id: product-view-service-feign

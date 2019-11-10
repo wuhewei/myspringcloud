@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: turbine
+turbine:
+  aggregator:
+    cluster-config: default
+  ### 配置Eureka中的serviceId列表，表明监控哪些服务
+  app-config: product-view-service-feign
+  cluster-name-expression: new String("default")
